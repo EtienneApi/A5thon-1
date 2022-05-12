@@ -1,0 +1,26 @@
+.cards {
+    display:block;
+    background-color: #0B7222;
+    flex: 1 1;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 1%;
+    box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+    
+}
+h2, h3{
+    text-align: center;
+    color: antiquewhite;
+}
+h1{
+    text-align: center;
+}
+.btn-green{
+    border-radius: 20%;
+    background-color: #57e576;
+    color: rgb(45, 44, 44); 
+}
+.btn{
+    display: flex;
+    align-items: center;
+}
