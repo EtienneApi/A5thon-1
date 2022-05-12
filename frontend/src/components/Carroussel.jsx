@@ -8,31 +8,31 @@ import slide5 from "../img-slides/slide5.png"
 
 function Carroussel() {
   return (
-    <div class="carousel" data-flickity='{ "fullscreen": false, "lazyLoad": 1, "autoPlay": true }'>
-      <div class="carousel-cell">
+    <div className="carousel" data-flickity='{ "fullscreen": false, "lazyLoad": 1, "autoPlay": true }'>
+      <div className="carousel-cell">
       <h2 className="hello">Sauvez-moi !</h2>
       <button className="hellobtn">J'agis !</button>
-        <img class="carousel-cell-image1"
+        <img className="carousel-cell-image1"
           data-flickity-lazyload={slide5} />
       </div>
-      <div class="carousel-cell">
+      <div className="carousel-cell">
       <p className="paragraphe2">KEEP THE TREE</p>
-        <img class="carousel-cell-image"
+        <img className="carousel-cell-image"
           data-flickity-lazyload={slide2} />
       </div>
-      <div class="carousel-cell">
+      <div className="carousel-cell">
       <h2 className="hello">Adopte !</h2>
       <p className="paragraphe3">Aujourd'hui, il est possible d'adopté un arbre, qu'attends-tu ?</p>
       <button className="hellobtn">Je plante un arbre !</button>
-        <img class="carousel-cell-image"
+        <img className="carousel-cell-image"
           data-flickity-lazyload={slide3} />
       </div>
-      <div class="carousel-cell">
-        <img class="carousel-cell-image"
+      <div className="carousel-cell">
+        <img className="carousel-cell-image"
           data-flickity-lazyload={slide1} />
       </div>
-      <div class="carousel-cell">
-        <img class="carousel-cell-image"
+      <div className="carousel-cell">
+        <img className="carousel-cell-image"
           data-flickity-lazyload={slide4} />
       </div>
     </div>
