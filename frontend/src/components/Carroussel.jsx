@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Link } from 'react-router-dom';
+
 import "../CSS/carroussel.css";
 import slide1 from "../img-slides/slide1.jpg"
 import slide2 from "../img-slides/slide2.jpeg"
@@ -11,7 +14,9 @@ function Carroussel() {
     <div className="carousel" data-flickity='{ "fullscreen": false, "lazyLoad": 1, "autoPlay": true }'>
       <div className="carousel-cell">
       <h2 className="hello">Sauvez-moi !</h2>
+      <Link to="/Engagement">
       <button className="hellobtn">J'agis !</button>
+      </Link>
         <img className="carousel-cell-image1"
           data-flickity-lazyload={slide5} />
       </div>
@@ -23,7 +28,9 @@ function Carroussel() {
       <div className="carousel-cell">
       <h2 className="hello">Adopte !</h2>
       <p className="paragraphe3">Aujourd'hui, il est possible d'adopté un arbre, qu'attends-tu ?</p>
-      <button className="hellobtn">Je plante un arbre !</button>
+      <Link to="/adoption">
+      <button className="hellobtn2">Je plante un arbre !</button>
+      </Link>
         <img className="carousel-cell-image"
           data-flickity-lazyload={slide3} />
       </div>

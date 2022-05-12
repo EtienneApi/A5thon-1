@@ -1,4 +1,7 @@
 import React from "react";
+
+import { Link } from "react-router-dom";
+
 import { Fade } from "react-awesome-reveal";
 import { Bounce } from "react-awesome-reveal";
 import { Slide } from "react-awesome-reveal";
@@ -38,7 +41,9 @@ function Bloc() {
             <div className="bloc4">
                 <img className="bloc3img" src={loveplanet} />
                 <p className="bloc4pbis">Aime ta planète !</p>
+                <Link to="/eco-quizz">
                 <button className="bloc4p">Viens par ici, si tu souhaites agir</button>
+                </Link>
             </div>
         </Slide>
         <div className="help-us">

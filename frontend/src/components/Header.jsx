@@ -13,7 +13,7 @@ function Header() {
   };
 
   return (
-    <div className={`header ${showMenu ? "show-nav" : "hide-nav"}`}>
+    <div className="menuburger" class={`header ${showMenu ? "show-nav" : "hide-nav"}`}>
       <img
         className="logo"
         src={logo}

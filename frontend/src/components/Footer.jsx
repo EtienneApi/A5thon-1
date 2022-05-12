@@ -14,12 +14,12 @@ function Footer() {
       
 
         <div className="footer-navigation">
-          <ul>
+          <ul className="footergrid">
             <NavLink to="/">
               <li>Accueil</li>
             </NavLink>
             <NavLink to="/eco-quizz">
-              <li>Eco-quiz</li>
+              <li>Quiz</li>
             </NavLink>
             <NavLink to="/adoption">
               <li>Adopte un arbre</li>
@@ -63,7 +63,7 @@ function Footer() {
       <div className="description">
           <div className="">
         <img
-          className="logo"
+          className="logofooter"
           src={logo}
           alt="Le logo"
         />
