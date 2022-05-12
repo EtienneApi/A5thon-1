@@ -1,4 +1,5 @@
 import React from "react";
+
 import Carroussel from "@components/Carroussel";
 import Bloc from "../components/BlocHome";
 
@@ -11,8 +12,6 @@ function Home() {
       </header>
       <Bloc />
     </div>
-
-
   );
 }
 
