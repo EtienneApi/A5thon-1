@@ -1,8 +1,12 @@
 /* external css: flickity.css, fullscreen.css */
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-body { font-family: sans-serif; }
+body {
+  font-family: sans-serif;
+}
 
 .carousel {
   background: #222;
@@ -24,6 +28,7 @@ body { font-family: sans-serif; }
   margin-right: 10px;
   /* center images in cells with flexbox */
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 
@@ -39,4 +44,50 @@ body { font-family: sans-serif; }
 
 .carousel.is-fullscreen .carousel-cell-image {
   max-width: 100%;
+}
+
+.hello {
+  position: absolute;
+  color: rgb(252, 252, 252);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3rem;
+  margin-left: 7%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20%;
+}
+
+.hellobtn {
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: absolute;
+  color: white;
+  margin-top: 50%;
+  padding: 04%;
+  background-color: #0B7222;
+  border-radius: 3%;
+  border-style: none;
+  width: 40%;
+  justify-content: center;
+}
+
+.hellobtn:hover {
+  background-color: #189433;
+}
+
+
+.paragraphe3 {
+  position: absolute;
+  margin-bottom: 60%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 0.95rem;
+  margin-left: 3%;
+}
+
+.paragraphe2 {
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 2rem;
 }

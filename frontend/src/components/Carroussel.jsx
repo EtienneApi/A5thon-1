@@ -8,16 +8,22 @@ import slide5 from "../img-slides/slide5.png"
 
 function Carroussel() {
   return (
-    <div class="carousel" data-flickity='{ "fullscreen": false, "lazyLoad": 1 }'>
+    <div class="carousel" data-flickity='{ "fullscreen": false, "lazyLoad": 1, "autoPlay": true }'>
       <div class="carousel-cell">
+      <h2 className="hello">Sauvez-moi !</h2>
+      <button className="hellobtn">J'agis !</button>
         <img class="carousel-cell-image1"
           data-flickity-lazyload={slide5} />
       </div>
       <div class="carousel-cell">
+      <p className="paragraphe2">KEEP THE TREE</p>
         <img class="carousel-cell-image"
           data-flickity-lazyload={slide2} />
       </div>
       <div class="carousel-cell">
+      <h2 className="hello">Adopte !</h2>
+      <p className="paragraphe3">Aujourd'hui, il est possible d'adopté un arbre, qu'attends-tu ?</p>
+      <button className="hellobtn">Je plante un arbre !</button>
         <img class="carousel-cell-image"
           data-flickity-lazyload={slide3} />
       </div>
