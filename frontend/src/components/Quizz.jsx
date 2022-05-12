@@ -5,6 +5,7 @@ import questions from "./Question";
 import "../CSS/quizz.css";
 
 export default function Quizz() {
+  const [displayReponse, setDisplayReponse] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
@@ -24,16 +25,32 @@ export default function Quizz() {
   return (
     <div className="imageQuizz">
       {showScore ? (
-        <div className="scoreDeFin">
+        <div>
           <h2>
             Votre score est de {score} sur {questions.length}
           </h2>
-          <Link to="/engagement">
-            <button className="agirQuizz" type="button">
-              {" "}
-              Il est temps d&apos;agir{" "}
+          <div className="scoreFinal">
+            <Link to="/engagement">
+              <button className="agirQuizz" type="button">
+                {" "}
+                Il est temps d&apos;agir{" "}
+              </button>
+            </Link>
+            <button
+              type="button"
+              className="agirQuizz"
+              onClick={() => setDisplayReponse(!displayReponse)}
+            >
+              Afficher les Reponses :{" "}
             </button>
-          </Link>
+          </div>
+          {displayReponse
+            ? questions.map((answerOption) => (
+                <li className="listeReponse">
+                  Q{answerOption.id} : {answerOption.reponse}{" "}
+                </li>
+              ))
+            : null}
         </div>
       ) : (
         <>
@@ -43,7 +60,11 @@ export default function Quizz() {
                 <span>Question {currentQuestion + 1}</span>/{questions.length}
               </h2>
               <h3>{questions[currentQuestion].questionText}</h3>
-              <img src={questions[currentQuestion].url} alt="" />
+              <img
+                className="imgQuestion"
+                src={questions[currentQuestion].url}
+                alt=""
+              />
             </div>
           </div>
           <div className="answer-section">

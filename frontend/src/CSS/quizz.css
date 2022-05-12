@@ -29,8 +29,8 @@
     background-repeat: no-repeat;
     background-size: cover;      
 }
-  /* ANSWERS/RIGHT SECTION */
-  .answer-section {
+
+.answer-section {
     background-image: url(https://images.pexels.com/photos/3573351/pexels-photo-3573351.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     margin-top: 1rem;
     width: 100%;
@@ -38,7 +38,7 @@
     justify-content: space-around;
     display: grid;
     grid-template-columns: 100px 100px;
-  }
+}
   
 .agirQuizz{
     margin-top: 2rem;
@@ -54,4 +54,19 @@
     padding: 1rem;
     text-align: justify;
     line-height: 1.9rem;
+}
+
+.imgQuestion{
+    width:15rem;
+    height: 14rem;
+}
+
+.listeReponse{
+    padding: 0.4rem;
+    text-align: left;
+}
+
+.scoreFinal{
+    display: flex;
+    justify-content: space-around;
 }
