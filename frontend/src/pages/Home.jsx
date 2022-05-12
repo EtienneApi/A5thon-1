@@ -1,9 +1,11 @@
 import React from "react";
+import Carroussel from "@components/Carroussel";
 
 function Home() {
   return (
     <header className="App-header">
-      <button type="submit">click</button>
+    <h1>Ça commence avec vous</h1>
+      <Carroussel/>
     </header>
   );
 }
