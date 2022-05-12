@@ -2,15 +2,11 @@ import React, {useState} from 'react';
 
 import pictures from '../data/Pictures.js'
 
-const Tree = ({tree}) => {  
-// const [picture, setPicture] = useState([]);
+const Tree = ({tree, index}) => {  
   return (
     <div>
       <h1>{tree.name}</h1>
-      {/* {(() => {
-        if (parseInt(pictures.id)===parseInt(tree.id))
-        return <img src={pictures.image} alt={tree.name}/> 
-      })}   */}
+      <img src={pictures[index].image} alt={tree.name} />
       <button>
       je veux adopter un {tree.name} pour {tree.price}€/mois
       </button> 

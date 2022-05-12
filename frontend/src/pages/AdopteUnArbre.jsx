@@ -6,6 +6,7 @@ const AdopteUnArbre = () => {
   const [trees, setTrees] = useState([]);
   const [project, setProject] = useState([]);
 
+
   useEffect(() => {
     fetch("https://tree-nation.com/api/projects/3")
       .then(resultat => resultat.json())
@@ -28,7 +29,7 @@ const AdopteUnArbre = () => {
       <div>
         {trees
         .map((tree, index) => {  
-        if (index < 10) return <Tree tree={tree} key={tree.id} />
+        if (index < 10) return <Tree index={index} tree={tree} key={tree.id} />
         })}
       </div>
     </div>

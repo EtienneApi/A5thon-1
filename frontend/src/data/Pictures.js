@@ -1,7 +1,7 @@
-const pictures = () => [
+const pictures = [
  {
     id: 42,
-    image:"https://www.safari-afrika.de/wp-content/uploads/2019/04/Acacia-mangium-006.jpg"
+    image:"https://images.bonanzastatic.com/afu/images/514a/942c/b0de_9718886009/Acacia_mangium.png"
  },  
  {  
     id: 43,
