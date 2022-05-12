@@ -1,9 +1,11 @@
+import React from "react";
 
-
-export default function Home() {
+function Home() {
   return (
     <header className="App-header">
-      <h1>Hello</h1>
+      <button type="submit">click</button>
     </header>
   );
 }
+
+export default Home;

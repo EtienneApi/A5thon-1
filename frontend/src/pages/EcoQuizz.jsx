@@ -1,6 +1,6 @@
 import React from "react";
 
-function Enfants() {
+function EcoQuizz() {
   return (
     <div>
       <h1>Enfants</h1>
@@ -8,4 +8,4 @@ function Enfants() {
   );
 }
 
-export default Enfants;
+export default EcoQuizz;
