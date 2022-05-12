@@ -1,4 +1,7 @@
 import React from "react";
+
+import { Link } from "react-router-dom";
+
 import { Fade } from "react-awesome-reveal";
 import { Bounce } from "react-awesome-reveal";
 import { Slide } from "react-awesome-reveal";
@@ -38,20 +41,21 @@ function Bloc() {
             <div className="bloc4">
                 <img className="bloc3img" src={loveplanet} />
                 <p className="bloc4pbis">Aime ta planète !</p>
+                <Link to="/eco-quizz">
                 <button className="bloc4p">Viens par ici, si tu souhaites agir</button>
+                </Link>
             </div>
         </Slide>
         <div className="help-us">
             <div className="bloc5">
                 <div className="box">
                     <span className="spanlookh2">
-                        Soutenez
-                        notre indépendance financière
-
+                        Soutenez<br></br>
+                        notre indépendance <br></br>financière
                     </span>
-                    <p>C'est à vous que nous devons notre liberté de parole et d'action.</p>
-                    <a href="https://faire-un-don.greenpeace.fr/?codespec=NYYFD" class="btn primary-btn icon-heart donate-link">
-                        <span>FAIRE UN DON</span>
+                    <p className="paragraphdons">C'est à vous que nous devons notre liberté de parole et d'action.</p>
+                    <a href="https://paypal.fr/" className="donsbtn">
+                        <span className="donspan">FAIRE UN DON</span>
                     </a>
                 </div>
             </div>
