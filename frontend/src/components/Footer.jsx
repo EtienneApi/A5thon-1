@@ -18,7 +18,7 @@ function Footer() {
             <NavLink to="/">
               <li>Accueil</li>
             </NavLink>
-            <NavLink to="/eco-quiz">
+            <NavLink to="/eco-quizz">
               <li>Eco-quiz</li>
             </NavLink>
             <NavLink to="/adoption">
@@ -68,7 +68,7 @@ function Footer() {
           alt="Le logo"
         />
         </div>
-        <p> All right reserved ®- 2022 </p>
+        
       </div>
     </div>
   );

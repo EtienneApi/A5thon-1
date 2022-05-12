@@ -1,16 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function Nav(handleShowMenu) {
+function Nav({handleShowMenu}) {
   return (
     <ul>
       <NavLink to="/" onClick={() => handleShowMenu()}>
         <li>Accueil</li>
       </NavLink>
-      <NavLink to="/eco-quiz" onClick={() => handleShowMenu()}>
+      <NavLink to="/eco-quizz" onClick={() => handleShowMenu()}>
         <li>Eco-quiz</li>
       </NavLink>
-      <NavLink to="/adotion" onClick={() => handleShowMenu()}>
+      <NavLink to="/adoption" onClick={() => handleShowMenu()}>
         <li>Adopte un arbre</li>
       </NavLink>
       <NavLink to="/infos" onClick={() => handleShowMenu()}>
