@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 
+
 import pictures from '../data/Pictures.js'
 
 const Tree = ({tree, index}) => {  
@@ -13,14 +14,5 @@ const Tree = ({tree, index}) => {
     </div>
   )
 };
-
-// {
-//     "id": 42,
-//     "project_id": 3,
-//     "name": "Acacia mangium",
-//     "life_time_CO2": 220,
-//     "price": 3,
-//     "stock": 0
-//   },
 
 export default Tree;
