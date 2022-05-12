@@ -5,7 +5,7 @@ const pictures = [
  },  
  {  
     id: 43,
-    image: "https://www.quintadosouriques.com/wp-content/uploads/2021/05/eucalyptus-pellita-19083089-768x1152.jpg"
+    image: "https://www.quintadosouriques.com/wp-content/uploads/2021/05/eucalyptus-pellita-19080.jpg"
  },
  {  
     id: 44,

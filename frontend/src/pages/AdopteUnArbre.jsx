@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import Tree from '../components/Tree'
+import Tree from '../components/Tree';
+import '../CSS/adoption.css';
 
 const AdopteUnArbre = () => {
   const [trees, setTrees] = useState([]);
@@ -22,7 +23,7 @@ const AdopteUnArbre = () => {
 
   return (
     <div>
-      <h1> participez au projet {project.name} en Colombie</h1>
+      <h1>Participez au projet {project.name} en Colombie</h1>
       <img src={project.image} alt={project.name}/>  
       <p>Voici les essences disponibles sur ce projet :</p>
       <div>
