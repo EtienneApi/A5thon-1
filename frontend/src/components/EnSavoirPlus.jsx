@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../CSS/engagement.css";
+import Eye from "@assets/eye.png";
 
 function EnSavoirPlus({ list }) {
   const [activ, setActive] = useState(false);
@@ -8,21 +9,20 @@ function EnSavoirPlus({ list }) {
     <div>
       <div className="btn">
         <button
+          type="button"
           className={activ ? "btn-red " : "btn-green"}
           onClick={() => setActive(!activ)}
         >
-          Voir
+          <img className="eye" src={Eye} alt={Eye} />
         </button>
       </div>
       <div>
         {activ ? (
           <div>
-            <h6>Plus de détails</h6>
-            <p>{list.explication}</p>
+            {/* <h6 className="details">Plus de détails</h6> */}
+            <p className="explications">{list.explication}</p>
           </div>
-        ) : (
-          ""
-        )}
+        ) : null}
       </div>
     </div>
   );

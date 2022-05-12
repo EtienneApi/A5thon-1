@@ -11,7 +11,7 @@ function CardEngagement({ list }) {
         <h3>{list.text}</h3>
       </div>
       <div className="explication">
-        <EnSavoirPlus />
+        <EnSavoirPlus list={list} />
       </div>
     </div>
   );
