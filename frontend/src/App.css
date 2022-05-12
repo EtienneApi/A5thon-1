@@ -13,10 +13,10 @@
   box-sizing: border-box;
   letter-spacing: 0.1rem;
 
-  --BackgroundColor:#f7f7ff;
-  --MainColor: #009C41;
-  --color2: #1DBC60;
-  --color3: #8EFFC1;
+  --BackgroundColor: #f7f7ff;
+  --MainColor: #009c41;
+  --color2: #1dbc60;
+  --color3: #8effc1;
   --border-radius: 18px;
   --box-shadow: 0 3px 7px var(--MainColor);
 }
