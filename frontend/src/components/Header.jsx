@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 import logo from "../assets/logo.png";
 import Nav from "./Nav";
 
@@ -13,12 +12,8 @@ function Header() {
   };
 
   return (
-    <div className="menuburger" class={`header ${showMenu ? "show-nav" : "hide-nav"}`}>
-      <img
-        className="logo"
-        src={logo}
-        alt="Le logo"
-      />
+    <div className={`header ${showMenu ? "show-nav" : "hide-nav"}`}>
+      <img className="logo" src={logo} alt="Le logo" />
       <button
         type="button"
         className="navbar-burger"
@@ -28,7 +23,7 @@ function Header() {
       >
         <span className="bar" />
       </button>
-      
+
       <div className="menuWrapper">
         <Nav handleShowMenu={handleShowMenu} />
       </div>

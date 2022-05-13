@@ -45,7 +45,9 @@
     width: 10rem;
     height: 6rem;
     border-radius: 20px;
-    background-color: green;
+    color: white;
+    background-color: #ee931d;
+    border: none;
     font-size: medium;
     font-weight: bold;
 }
@@ -67,6 +69,16 @@
 }
 
 .scoreFinal{
+    margin-bottom: 4.3rem;
     display: flex;
     justify-content: space-around;
+}
+
+.q{
+    color:  #ee931d;
+    font-size: larger;
+}
+
+.h2Score{
+    color: black;
 }

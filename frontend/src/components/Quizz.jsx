@@ -26,7 +26,7 @@ export default function Quizz() {
     <div className="imageQuizz">
       {showScore ? (
         <div>
-          <h2>
+          <h2 className="h2Score">
             Votre score est de {score} sur {questions.length}
           </h2>
           <div className="scoreFinal">
@@ -46,8 +46,9 @@ export default function Quizz() {
           </div>
           {displayReponse
             ? questions.map((answerOption) => (
-                <li className="listeReponse">
-                  Q{answerOption.id} : {answerOption.reponse}{" "}
+                <li key={answerOption.id} className="listeReponse">
+                  <span className="q">Q</span>
+                  {answerOption.id} : {answerOption.reponse}{" "}
                 </li>
               ))
             : null}

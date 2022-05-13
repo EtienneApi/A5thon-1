@@ -14,7 +14,7 @@ function Nav({handleShowMenu}) {
         <li>Adopte un arbre</li>
       </NavLink>
       <NavLink to="/infos" onClick={() => handleShowMenu()}>
-        <li>Infos</li>
+        <li>Infos / contact</li>
       </NavLink>
       <NavLink to="/engagement" onClick={() => handleShowMenu()}>
         <li>Engagement</li>
