@@ -91,7 +91,7 @@ export default function Info() {
               )}
             </label>
             <label className="contactLabel" htmlFor="messageInput">
-              Message :
+              Message : 
               <textarea
                 className="contactText"
                 name="messageInput"
