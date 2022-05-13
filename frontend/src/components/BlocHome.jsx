@@ -2,9 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import { Fade } from "react-awesome-reveal";
-import { Bounce } from "react-awesome-reveal";
-import { Slide } from "react-awesome-reveal";
+import { Fade, Bounce, Slide } from "react-awesome-reveal";
 
 import "../CSS/blochome.css";
 
@@ -32,12 +30,9 @@ function Bloc() {
       <Slide triggerOnce delay={1000}>
         <div className="bloc3">
           <h3 className="bloch3">Que proposons-nous ?</h3>
-          <br></br>
+          <br />
           <p className="blocp3">
-            Et bien ça commence par vous !
-            <>
-              <br></br>
-            </>
+            Et bien ça commence par vous !<br />
           </p>
           <p className="blocp3bis">Ce que nous proposons, c'est vous.</p>
           <h4 className="bloch3bis">Et on commence par quoi ?</h4>
@@ -58,13 +53,20 @@ function Bloc() {
         <div className="bloc5">
           <div className="box">
             <span className="spanlookh2">
-              Soutenez<br></br>
-              notre indépendance <br></br>financière
+              Soutenez
+              <br />
+              notre indépendance <br />
+              financière
             </span>
             <p className="paragraphdons">
               C'est à vous que nous devons notre liberté de parole et d'action.
             </p>
-            <a href="https://paypal.fr/" className="donsbtn">
+            <a
+              href="https://paypal.fr/"
+              target="_blank"
+              className="donsbtn"
+              rel="noreferrer"
+            >
               <span className="donspan">FAIRE UN DON</span>
             </a>
           </div>

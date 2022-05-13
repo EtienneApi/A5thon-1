@@ -13,6 +13,7 @@ export default function Info() {
   } = useForm();
 
   const onSubmit = (data, r) => {
+    alert("Merci pour votre message, il sera traité au plus vite !");
     const templateId = "template_nqsoryp";
     const serviceId = "service_hkmt1sg";
 
@@ -41,7 +42,7 @@ export default function Info() {
   return (
     <div>
       <div>
-        <h1>quelque information utile : </h1>
+        <h1>Quelques informations utiles</h1>
         <img
           className="imgInfo"
           src="https://www.bioalaune.com/img/userfiles/2019/actualites-media/OPENING%20UP%20A%20restaurant%20(2).png"
@@ -91,7 +92,7 @@ export default function Info() {
               )}
             </label>
             <label className="contactLabel" htmlFor="messageInput">
-              Message : 
+              Message :
               <textarea
                 className="contactText"
                 name="messageInput"
@@ -110,6 +111,17 @@ export default function Info() {
           </form>
         </div>
       </div>
+      <h1>Où nous trouver ?</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.362223352158!2d2.2968133159968636!3d48.870370979288666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb788db4ea7bc090c!2zNDjCsDUyJzEzLjMiTiAywrAxNyc1Ni40IkU!5e0!3m2!1sfr!2sfr!4v1652433288996!5m2!1sfr!2sfr"
+        width="375"
+        height="450"
+        frameBorder="0"
+        style={{ border: 0, padding: "10px" }}
+        allowFullScreen=""
+        aria-hidden="false"
+        tabIndex="0"
+      />
     </div>
   );
 }

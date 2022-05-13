@@ -7,9 +7,12 @@ function Tree({ tree, index }) {
     <div className="cardsAdoption">
       <h2>{tree.name}</h2>
       <img className="picture" src={pictures[index].image} alt={tree.name} />
-      <button type="button" className="buttonAdoption">
-        Je veux adopter un {tree.name} pour {tree.price}€/mois
-      </button>
+      <a href="https://tree-nation.com/plant/user/tcotpe" target="_Blank">
+        {" "}
+        <button type="button" className="buttonAdoption">
+          Je veux adopter un {tree.name} pour {tree.price}€/mois
+        </button>
+      </a>
     </div>
   );
 }

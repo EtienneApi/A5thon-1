@@ -41,7 +41,7 @@ export default function Quizz() {
               className="agirQuizz"
               onClick={() => setDisplayReponse(!displayReponse)}
             >
-              Afficher les Reponses :{" "}
+              Afficher les Réponses{" "}
             </button>
           </div>
           {displayReponse
