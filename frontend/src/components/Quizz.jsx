@@ -57,10 +57,13 @@ export default function Quizz() {
         <>
           <div className="question-section">
             <div className="question-text">
-              <h2>
-                <span>Question {currentQuestion + 1}</span>/{questions.length}
+              <h2 className="quest">
+                <span className="quest">Question {currentQuestion + 1}</span>/
+                {questions.length}
               </h2>
-              <h3>{questions[currentQuestion].questionText}</h3>
+              <h3 className="quest">
+                {questions[currentQuestion].questionText}
+              </h3>
               <img
                 className="imgQuestion"
                 src={questions[currentQuestion].url}
