@@ -20,16 +20,32 @@ function AdopteUnArbre() {
       .catch((err) => console.error(err));
   }, []);
 
+
+
+  const [text, setText] = useState("");
+
+
+
   return (
     <div>
-      <h1>Participez au projet {project.name} en Colombie</h1>
-      <img className="imgAd" src={project.image} alt={project.name} />
-      <p>Voici les essences disponibles sur ce projet :</p>
+      <h2 className="titleh1">Participez au projet {project.name} en Colombie</h2>
+      <p className="pedregoza">Les efforts de boisement et de reforestation de la plantation de La Pedregoza sont un élément important dans la lutte globale contre le changement climatique et la désertification de la planète. </p>
+      <div className="divinput">
+        <label className="labelinput">Choisissez une plante :</label>
+        <input className="searchinput" placeholder="Je recherche ma plante" type="text" onChange={(e) => setText(e.target.value)} />
+
+      </div>
+      <p className="papi">Voici les essences disponibles sur ce projet :</p>
       <div>
-        {trees.map((tree, index) => {
-          if (index < 10)
-            return <Tree index={index} tree={tree} key={tree.id} />;
-        })}
+
+        {
+          trees && trees
+            .filter(tree => tree.name.includes(text))
+            .map((tree, index) => {
+              if (index < 10)
+                return <Tree index={index} tree={tree} key={tree.id} />;
+            })
+        }
       </div>
     </div>
   );
