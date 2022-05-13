@@ -3,11 +3,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import "../CSS/carroussel.css";
-import slide1 from "../img-slides/slide1.jpg"
-import slide2 from "../img-slides/slide2.jpeg"
-import slide3 from "../img-slides/slide3.jpeg"
-import slide4 from "../img-slides/slide4.jpg"
-import slide5 from "../img-slides/slide5.png"
+import slide1 from "../img-slides/slide1.jpg";
+import slide2 from "../img-slides/slide2.jpeg";
+import slide3 from "../img-slides/slide3.jpeg";
+import slide4 from "../img-slides/slide4.jpg";
+import slide5 from "../img-slides/slide5.png";
 
 function Carroussel() {
   return (
